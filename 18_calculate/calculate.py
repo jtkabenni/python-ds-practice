@@ -27,16 +27,16 @@ def calculate(operation, a, b, make_int=False, message='The result is'):
         
     """
     result = ""
-    if operation != "add" and operation != "subtract" and operation != "divide" and operation != "multiply":
-        return None
     if operation == "add":
         result = a + b
     elif operation == "subtract":
         result = a-b
     elif operation == "multiply":
         result = a * b
-    else:
+    elif operation == "divide":
         result = a/b
+    else:
+        return
 
     if make_int == True:
         result = int(result)

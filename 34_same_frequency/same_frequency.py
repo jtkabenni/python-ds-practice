@@ -12,7 +12,4 @@ def same_frequency(num1, num2):
     """
     num1_sorted = sorted([int(num) for a, num in enumerate(str(num1))])
     num2_sorted = sorted([int(num) for a, num in enumerate(str(num2))])
-    if num1_sorted == num2_sorted:
-        return True
-    else:
-        return False 
+    return num1_sorted == num2_sorted

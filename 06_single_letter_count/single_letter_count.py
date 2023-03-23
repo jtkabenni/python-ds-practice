@@ -13,6 +13,8 @@ def single_letter_count(word, letter):
     count = 0
     for let in word.upper():
         if let == letter.upper():
-            count = count +1
+            count += 1
 
     return count
+
+    # could also use count() method

@@ -22,7 +22,7 @@ def partition(lst, fn):
     lists = [[],[]]
 
     for item in lst:
-        if fn(item) == True:
+        if fn(item):
             lists[0].append(item)
         else:
             lists[1].append(item)

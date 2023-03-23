@@ -23,5 +23,5 @@ def find_greater_numbers(nums):
     for i, num in enumerate(nums):
         for next_num in nums[i+1:]:
             if next_num > num:
-                count= count+1
+                count+=+1
     return count 

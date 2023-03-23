@@ -41,24 +41,22 @@ def list_manipulation(lst, command, location, value=None):
         True
     """
 
-    if command != "add" and command != "remove":
-        return None 
-    elif location != "beginning" and location != "end":
-        return None
-    elif command == "add":
+
+    if command == "add":
         if location == "beginning":
             lst.insert(0,value)  
+            return lst
         elif location == "end":
             lst.append(value)
-        return lst
+            return lst
     elif command == "remove":
         if location == "beginning":
-            remove = lst[0]
-            lst.pop(0)
+           
+            return lst.pop(0)
         elif location == "end": 
-            remove = lst[-1]
-            lst.pop(-1)
-        return remove
+
+            return lst.pop(-1)
+        
 
 
 

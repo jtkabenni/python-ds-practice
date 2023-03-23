@@ -31,17 +31,8 @@ def includes(collection, sought, start=None):
         True
     """
     if type(collection) == list:
-        if sought in collection[start:]:
-            return True
-        else:
-            return False
+        return sought in collection[start:]
     elif type(collection)==dict:
-        if sought in collection.values():
-            return True
-        else:
-            return False
+        return sought in collection.values()
     else:
-        if sought in collection:
-            return True
-        else:
-            return False
+        return sought in collection

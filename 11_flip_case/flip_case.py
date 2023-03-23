@@ -16,6 +16,6 @@ def flip_case(phrase, to_swap):
         if char.lower() == to_swap.lower():
             newPhrase = newPhrase+char.swapcase()
         else:
-            newPhrase = newPhrase + char
+            newPhrase += char
     return newPhrase
 

@@ -22,8 +22,8 @@ def sum_up_diagonals(matrix):
     sum2 = 0
     length = len(matrix)
     for idx, lst in enumerate(matrix):
-        sum1 = sum1 + lst[idx]
-        sum2 = sum2  + lst[length-1]
-        length = length - 1
+        sum1 += lst[idx]
+        sum2 += lst[length-1]
+        length -= 1
 
     return sum1 + sum2

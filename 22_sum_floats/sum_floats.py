@@ -10,7 +10,7 @@ def sum_floats(nums):
     nums_sum = 0
     for num in nums:
         if isinstance(num, float):
-            nums_sum = nums_sum + num
+            nums_sum += num
     return nums_sum
 
 
